@@ -1,0 +1,72 @@
+.filter {
+    width: 89%;
+    margin: 30px auto;
+    margin-top: 150px;
+    background:rgb(70, 185, 80);
+    color: black;
+    
+}
+.wrapper {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    border: #eee9e9;
+    border-color: azure;
+    border-radius: 20px;
+}
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+}
+
+.icons{
+    width: 30px;
+    height:30px;
+}
+.filter-text {
+    margin-top: 16px;
+    font-size: 25px;
+}
+
+.amount-text {
+    padding-left: 34px;
+    border-left: 2px solid #9F9F9F;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.controls {
+    font-size: 20px;
+    display: flex;
+    align-items: center
+}
+.amount-number {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #d1d8d0
+}
+.amount-number::-webkit-outer-spin-button,
+.amount-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.amount {
+    margin-right: 30px;
+}
+select {
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color:black;
+    margin-left: 20px;
+    margin-top: 10px;
+}

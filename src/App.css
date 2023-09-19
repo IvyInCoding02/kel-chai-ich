@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #1b0a4f !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -71,6 +71,7 @@ input:focus, textarea:focus, select:focus {
 	main .container {
 		max-width: 100%;
 		padding: 0 150px;
+  
 	}
 }
 
@@ -83,7 +84,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 15px 0;
+  padding: 10px 0px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -361,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider{
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 30px;
   position: relative;
 }
 
@@ -381,21 +382,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider .item img{
   align-items: center;
   width: 40%;
-  margin: 0 auto 15px auto;
+  margin: 0 0px, 15px 0px;
 }
 
 .background-image-left{
   top: 28%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 90%;
   z-index: -1;
 }
 
 
 /************ Scholarships Css ************/
 .project {
-  padding: 200px 0;
+  padding: 180px 0;
   position: relative;
   background-color: black;
 }
@@ -519,43 +520,105 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-.App {
-  text-align: center;
+/************ Footer Css ************/
+.footer {
+  margin: 40px auto 0px auto;
+  padding: 30px 0 20px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer h1{
+  font-size: 26px;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer img {
+  width: 25%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/************ Projects Css ************/
+/* .contact {
+  background: linear-gradient(90.21deg, #5db36b -5.91%, #5d41da 111.58%);
+  padding: 60px 0 200px 0;
+  margin: 120px auto;
 }
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+} */
 
 

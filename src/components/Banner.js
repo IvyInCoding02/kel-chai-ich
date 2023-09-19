@@ -3,6 +3,7 @@ import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from '../assets/images/background2.jpg';
 import { useEffect, useState } from "react";
 
+
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);

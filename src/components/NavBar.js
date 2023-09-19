@@ -6,6 +6,8 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { NavDropdown } from "react-bootstrap";
+import { AboutUs } from "./pages/AboutUs/AboutUs";
+import PartnershipPage from "./pages/PartnershipPage/PartnershipPage";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -44,11 +46,54 @@ return (
             href="/" className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
             onClick={() => onUpdateActiveLink("home")}> Home
           </Nav.Link>
-          {/* <Nav.Link 
+          <Nav.Link 
             href="/scholarships" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
             onClick={() => onUpdateActiveLink("skills")}> Scholarships
+          </Nav.Link>
+          <Nav.Link 
+            href="/resources" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("skills")}> Resources
+          </Nav.Link>
+          <Nav.Link 
+            href="/aboutUs" className={activeLink === "aboutUs" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("skills")}> AboutUs
+          </Nav.Link>
+          {/* <Nav.Link
+            href="/ouralumni" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("projects")}> Our Alumni
           </Nav.Link> */}
-          <NavDropdown title="Scholarships" id="basic-nav-dropdown" 
+          <Nav.Link
+            href="contacts" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("projects")}> Contact Us
+          </Nav.Link>
+        </Nav>
+        <span className="navbar-text">
+          <div className="social-icon">
+            <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
+              <img src={navIcon1} alt="" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550845261660&mibextid=LQQJ4d">
+              <img src={navIcon2} alt="" />
+            </a>
+            <a href="https://instagram.com/kel_chai_ich?igshid=MzMyNGUyNmU2YQ==">
+              <img src={navIcon3} alt="" />
+            </a>
+          </div>
+          <Nav.Link href="/partnership"> 
+          <button className="vvd">
+            <span>Let's Connect</span>
+          </button>
+          </Nav.Link>
+        </span>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  
+);
+
+}
+
+{/* <NavDropdown title="Scholarships" id="basic-nav-dropdown" 
           className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
           onClick={() => onUpdateActiveLink("skills")}>
               <NavDropdown.Item href="/undergraduate">Undergraduate</NavDropdown.Item>
@@ -58,46 +103,5 @@ return (
               <NavDropdown.Item href="phd">PhD</NavDropdown.Item>
               <NavDropdown.Item href="programmes">Programmes</NavDropdown.Item>
               <NavDropdown.Item href="scholarships">Scholarships</NavDropdown.Item>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Programmes
-              </NavDropdown.Item> */}
-            </NavDropdown>
-          <Nav.Link 
-            href="/resources" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("skills")}> Resources
-          </Nav.Link>
-          <Nav.Link 
-            href="/aboutUs" className={activeLink === "aboutUs" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("skills")}> AboutUs
-          </Nav.Link>
-          <Nav.Link
-            href="/ouralumni" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("projects")}> Our Alumni
-          </Nav.Link>
-          <Nav.Link
-            href="contacts" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("projects")}> Contact Us
-          </Nav.Link>
-        </Nav>
-        <span className="navbar-text">
-          <div className="social-icon">
-            <a href="#">
-              <img src={navIcon1} alt="" />
-            </a>
-            <a href="#">
-              <img src={navIcon2} alt="" />
-            </a>
-            <a href="#">
-              <img src={navIcon3} alt="" />
-            </a>
-          </div>
-          <button className="vvd" onClick={() => console.log("connect")}>
-            <span>Let's Connect</span>
-          </button>
-        </span>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-);
-          }
+              <NavDropdown.Divider />
+            </NavDropdown> */}
