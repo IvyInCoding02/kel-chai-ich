@@ -1,9 +1,47 @@
+.headline {
+  max-width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black
+}
+
+.headlineTitle {
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(4, 52, 4);
+}
+
+.headlineDescr {
+  max-width: 95%;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .headline {
+    margin: 80px auto 20px auto;
+  }
+
+  .headlineTitle {
+    font-size: 40px; 
+  }
+
+  .headlineDescr {
+    font-size: 16px; 
+  }
+}
+
 .container {
+  width: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin: 150px 30px;
+    margin: 150px auto;
+    background: rgb(34, 210, 116);
+    border-radius: 30px;
+    padding: 80px 5px;
    
   }
   
@@ -13,6 +51,7 @@
     position: relative;
     padding: 20px 20px 10px 20px;
     background-color: white;
+    border-radius: 20px;
     box-shadow: 4px 4px 4px 4px rgba(15, 206, 25, 0.25);
   }
   
@@ -45,11 +84,37 @@
     margin: 10px 30px;
   }
   
-  @media (min-width:1700px) {
-    .container {
-      display: column;
-      max-width: 100%;
-      padding: 0 150px;
-    
-    }
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 5px; /* Adjust padding for tablets */
   }
+
+  .title {
+    font-size: 20px; /* Smaller font size for tablets */
+  }
+
+  .info {
+    font-size: 14px; /* Smaller font size for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 5px; /* Adjust padding for phones */
+  }
+
+  .title {
+    font-size: 18px; /* Smaller font size for phones */
+  }
+
+  .info {
+    font-size: 12px; /* Smaller font size for phones */
+  }
+
+  .download {
+    width: 100%; /* Full width for phones */
+  }
+}
+

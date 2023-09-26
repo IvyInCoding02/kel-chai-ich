@@ -34,3 +34,39 @@
   padding: 16px 0 0 0;
   letter-spacing: 0.8px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer h1 {
+      font-size: 24px; /* Smaller font size for tablets */
+  }
+
+  .footer img {
+      width: 50%; /* Reduce image width for tablets */
+  }
+
+  .footer p {
+      font-size: 12px; /* Smaller font size for tablets */
+  }
+
+  .line {
+      margin: 10px auto; /* Reduce margin for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer h1 {
+      font-size: 22px; /* Smaller font size for phones */
+  }
+
+  .footer img {
+      width: 70%; /* Reduce image width for phones */
+  }
+
+  .footer p {
+      font-size: 10px; /* Smaller font size for phones */
+  }
+
+  .line {
+      margin: 5px auto; /* Reduce margin for phones */
+  }
+}
