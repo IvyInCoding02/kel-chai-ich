@@ -42,9 +42,10 @@
     font-weight: 700;
     color: #000;
     background-color: #fff;
-    padding: 14px 78px;
+    padding: 14px 68px;
     font-size: 18px;
-    margin: 15px 200px;
+    margin: 15px auto 15px 180px;
+    /* margin-left: 100px; */
     border-radius: 20px;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -73,3 +74,25 @@
   .contact form button:hover::before {
     width: 100%;
   }
+
+  @media (max-width: 767px) {
+    .contact h2 {
+      margin: 0 10px 20px 10px;
+    }
+    .contact form button{
+      margin: 15px auto 15px 120px;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .contact h2 {
+      margin: 0 20px 30px 20px;
+    }
+
+    .contact form button{
+      margin: 15px auto 15px 80px;
+    }
+  }
+
+  
