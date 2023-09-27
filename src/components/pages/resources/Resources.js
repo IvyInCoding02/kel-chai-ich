@@ -64,9 +64,7 @@ function Resources() {
         return (
           <div className={styles.wrapper}>
             <h1 className={styles.title}>{resource.title}</h1>
-            <p className={styles.pdf}>
-              <img src={resource.image} alt="pdf document" />
-            </p>
+              <img className={styles.img} src={resource.image} alt="pdf document" />
             <p className={styles.info}>{resource.info}</p>
             <a href={resource.uploadImage} dowload="pdf document">
               <button className={styles.download}>

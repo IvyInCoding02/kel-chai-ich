@@ -3,34 +3,36 @@ import logo from '../../assets/images/logo.png'
 import navIcon1 from "../../assets/images/nav-icon1.svg";
 import navIcon2 from "../../assets/images/nav-icon2.svg";
 import navIcon3 from "../../assets/images/nav-icon3.svg";
-import { Link } from 'react-bootstrap-icons';
+import { FileX, Link } from 'react-bootstrap-icons';
 import styles from "./footer.module.css";
 
 export const Footer = () => {
     return (
       <footer className={styles.footer}>
-        <Container>
+        <Container className={styles.container}>
           <Row className="align-items-center">
             <Col size={12} sm={6}>
               <img src={logo} alt="Logo" />
               <Col size={12} sm={6}>
-                <a>Home|</a>
-                <a>Scholarships|</a>
-                <a>OurAlumni|</a>
+                <a href="/">Home</a>
+                <a href="/scholarships"> Scholarships</a>
               </Col>
+              {/* <Col size={12} sm={6}>
+                <a>OurAlumni</a>
+              </Col> */}
               <Col size={12} sm={6}>
-                <a>About Us|</a>
-                <a>Contact Us|</a>
-                <a>Partnership|</a>
+                <a href="/aboutus">About Us </a>
+                <a href="/contactus"> Contact Us </a>
+                <a href=""> Partnership </a>
               </Col>
-              <Col>Bishkek, Kyrgyzstan. 2023</Col>
+              <Col><a href="#"> Bishkek, Kyrgyzstan. 2023 </a></Col>
               <Col>
                 <Nav.Link href="/login">Login</Nav.Link>
               </Col>
             </Col>
-            <Col size={12} sm={6} className="text-center txt-sm-end">
-              <div className="social-icon">
-                <h1>Follow us on:</h1>
+            <Col size={12} sm={6} className={styles.icons}>
+              <div className="social-icon"> 
+                <h1>Our social Media</h1>
                 <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
                   <img src={navIcon1} alt="" />
                 </a>

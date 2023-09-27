@@ -29,12 +29,43 @@
     color: black;
   }
   
-  .adminButton{
-  width: 400px;
-   margin-top: 12px;
-   padding: 10px  15px;
-   background-color: rgb(79, 194, 64);
-   border: none;
-   cursor: pointer;
-   text-transform: upperCase;
+    .adminButton {
+      width: 400px;
+      margin-top: 12px;
+      padding: 10px 15px;
+      background-color: rgb(79, 194, 64);
+      border: none;
+      cursor: pointer;
+      text-transform: upperCase;
+    }
+
+  /* Tablet styling */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%; 
+    margin: 100px auto;
   }
+
+  input {
+    width: 100%; 
+  }
+
+  .adminButton {
+    width: 100%; 
+  }
+}
+
+/* Mobile styling */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%; 
+    margin: 70px auto 20px auto; 
+  }
+
+  input {
+    width: 100%;
+  }
+  .adminButton {
+    width: 100%;
+  }
+}

@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
   .headline {
-    margin: 80px auto 20px auto;
+    margin: 20px auto 20px auto;
   }
 
   .headlineTitle {
@@ -34,21 +34,22 @@
 
 .container {
   width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 150px auto;
-    background: rgb(34, 210, 116);
-    border-radius: 30px;
-    padding: 80px 5px;
-   
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 150px auto 50px auto;
+  background: rgb(34, 210, 116);
+  border-radius: 30px;
+  padding: 80px 5px;
+
+}
   
   .wrapper {
-    max-width: 30%;
-    display: block;
-    position: relative;
+    max-width:40%; 
+    display: grid;
+    margin: 0px 0 2px 10px;
+    box-sizing: border-box;
     padding: 20px 20px 10px 20px;
     background-color: white;
     border-radius: 20px;
@@ -61,17 +62,18 @@
     margin-bottom: 10px;
   }
   
-  .pdf img {
-    max-width: 320px;
+  .img {
+    max-width: 350px;
     max-height: 200px;
+    margin: 5px auto;
     border: 2px solid white;
     border-radius: 4px;
   }
   
   .info {
-    max-width: 340px;
-    margin-top: 10px;
-    font-size: 16px;
+    max-width: 350px;
+    margin: 10px auto;
+    font-size: 18px;
     color: green;
   }
 
@@ -79,42 +81,61 @@
     width: 80%;
     color: white;
     background: green;
-    padding: 10px 10px;
+    padding: 10px 5px;
     border-radius: 20px;
-    margin: 10px 30px;
+    margin: 5px auto;
+    margin-left: 30px;
   }
   
 
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 30px 5px; /* Adjust padding for tablets */
+    width: 95%;
+    padding: 10px 0px; 
+  }
+
+  .wraper{
+    width: 200%; 
+    margin: 0 10px 32px 10px;
   }
 
   .title {
-    font-size: 20px; /* Smaller font size for tablets */
+    font-size: 20px; 
   }
 
   .info {
-    font-size: 14px; /* Smaller font size for tablets */
+    font-size: 16px; 
+    text-align: center;
+  }
+
+  .download{
+    margin: 5px auto;
+    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    padding: 20px 5px; /* Adjust padding for phones */
+    width: 90%;
+    padding: 20px 5px; 
+  }
+
+  .wrapper{
+    max-width: 90%;
   }
 
   .title {
-    font-size: 18px; /* Smaller font size for phones */
+    font-size: 22px; 
   }
 
   .info {
-    font-size: 12px; /* Smaller font size for phones */
+    font-size: 16px; 
   }
 
   .download {
-    width: 100%; /* Full width for phones */
+    width: 100%; 
+    margin: 0 auto;
   }
 }
 

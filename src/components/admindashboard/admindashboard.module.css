@@ -74,6 +74,7 @@ body {
 .adminContainer {
   display: flex;
   flex-direction:row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -85,7 +86,6 @@ body {
 }
 
 .scholarshipForm {
-
   border: 2px solid #008000; 
   padding: 20px;
   margin: 10px;
@@ -129,15 +129,51 @@ input[type="file"] {
 }
 
 .logoutBtn {
-  width:200px;
-  background-color:#008000;
-  margin: 20px 600px; 
+  background-color: #008000; 
+  color: #ffffff; 
+  border: none;
+  padding: 10px 100px;
+  margin: 30px 650px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* Responsive Styling */
-/* @media (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .headerText {
+    margin: 100px 150px 40px 150px;
+  }
+
   .scholarshipForm,
   .resourcesForm {
-    max-width: 100%; 
+    margin: 10px 10%;
   }
-} */
+
+
+  .logoutBtn {
+    margin: 10px 280px;
+  }
+}
+
+/* Media queries for phones */
+@media only screen and (max-width: 767px) {
+  .headerText {
+    margin: 100px 90px 20px 90px;
+  }
+
+  .scholarshipForm,
+  .resourcesForm {
+    margin: 10px 5%;
+  }
+
+ 
+  .logoutBtn {
+    margin: 10px 20px;
+  }
+}
+
+
+
+
+
+
+

@@ -110,7 +110,7 @@ function AdminDashboard() {
       </form>
     </div>
     <div>
-        <button className={styles.btn} onClick={logout}>
+        <button className={styles.logoutBtn} onClick={logout}>
           Logout
         </button>
       </div>

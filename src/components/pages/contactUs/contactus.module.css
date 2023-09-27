@@ -77,7 +77,12 @@
 
   @media (max-width: 767px) {
     .contact h2 {
-      margin: 0 10px 20px 10px;
+      margin: 0 40px 20px 40px;
+    }
+
+    .contact form input, .contact form textarea{
+      width: 95%;
+      margin: 5px 5px;
     }
     .contact form button{
       margin: 15px auto 15px 120px;
