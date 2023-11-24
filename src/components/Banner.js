@@ -44,7 +44,7 @@ export const Banner = () => {
         <Container>
           <Row className="align-items-center">
             <Col xs={12} md={6} xl={7}>
-              <span className="tagline">Welcome to Kel Chai Ich</span>
+              {/* <span className="tagline">Welcome to Kel Chai Ich</span> */}
               <h1>
                 {"Hi, your journey starts here. "}
                 <span className="wrap">{text}</span>
