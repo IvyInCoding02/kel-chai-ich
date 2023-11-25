@@ -48,26 +48,23 @@ return (
           </Nav.Link>
           <Nav.Link 
             href="/scholarships" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("skills")}> Scholarships
+            onClick={() => onUpdateActiveLink("scholarships")}> Scholarships
           </Nav.Link>
-          <Nav.Link 
-            href="/resources" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("skills")}> Resources
-          </Nav.Link>
+          {/* <Nav.Link 
+            href="/resources" className={activeLink === "resources" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("resources")}> Resources
+          </Nav.Link> */}
           <Nav.Link 
             href="/aboutUs" className={activeLink === "aboutUs" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("skills")}> AboutUs
+            onClick={() => onUpdateActiveLink("aboutsUs")}> AboutUs
           </Nav.Link>
-          {/* <Nav.Link
-            href="/ouralumni" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("projects")}> Our Alumni
-          </Nav.Link> */}
+          {/*   */}
           <Nav.Link
-            href="contacts" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("projects")}> Contact Us
+            href="/contacts" className={activeLink === "contacts" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("contacts")}> Contact Us
           </Nav.Link>
         </Nav>
-        <span className="navbar-text">
+        {/* <span className="navbar-text">
           <div className="social-icon">
             <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
               <img src={navIcon1} alt="" />
@@ -84,7 +81,7 @@ return (
             <span>Let's Connect</span>
           </button>
           </Nav.Link>
-        </span>
+        </span> */}
       </Navbar.Collapse>
     </Container>
   </Navbar>

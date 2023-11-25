@@ -25,14 +25,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 65px;
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #e7e6e9 !important;
+  background-color: #07030e !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -55,7 +55,7 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -76,13 +76,13 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
-p.success {
+/* p.success {
 	color: green;
 }
 
 p.danger {
 	color: red;
-}
+} */
 /************ Navbar Css ************/
 nav.navbar {
   padding: 10px 0px;
@@ -94,7 +94,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #04020d;
 }
 nav.navbar a.navbar-brand {
     width: 10%;
@@ -102,22 +102,24 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link 
  { 
-  font-weight: 400;
-  color: #12cf51 !important;
+  font-weight: 700;
+  color: white!important;
   letter-spacing: 0.5px;
-  padding: 0 10px;
+  
+  padding: 0 20px;
   font-size: 16px;
   opacity: 0.75;
 }
 
-#basic-nav-dropdown{
+
+/* #basic-nav-dropdown{
   font-weight: 400;
   color: #12cf51 !important;
   letter-spacing: 0.5px;
   padding: 0 10px;
   font-size: 16px;
   opacity: 0.75;
-}
+} */
 
 #basic-nav-dropdown:hover,
 #basic-nav-dropdown.active{
@@ -128,10 +130,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
-span.navbar-text {
+/* span.navbar-text {
     display: flex;
-    align-items: center;
-}
+    align-items: flex-end;
+} */
 .social-icon {
     display: inline-block;
     margin-left: 14px;
@@ -254,7 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/images/kyrgyzgirl4.jpg');
+  background-image: url('./assets/images/kyrgyzgirls2.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

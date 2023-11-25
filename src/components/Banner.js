@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from '../assets/images/background2.jpg';
 import { useEffect, useState } from "react";
+import contactUs from "./pages/contactUs/ContactUs";
 
 
 export const Banner = () => {
@@ -53,12 +54,7 @@ export const Banner = () => {
                 Kel Chai Ich is nonprofit foundation that focuses on assisting
                 students from Kyrgyzstan, particularly those from rural areas
                 and young women, in their pursuit of higher education in United
-                States. Our goal is providing with the necessary resources,
-                mentorship to successfully navigate the application and
-                enrollment process at international universities.This group
-                comprises founding members from both Kyrgyzstan and the USA,
-                which enables them to leverage existing relationships and
-                resources that helps the application process easy
+                States. 
               </p>
               <button onClick={() => console.log("connect")}>
                 Let's connect <ArrowRightCircle size={25} />
@@ -69,6 +65,15 @@ export const Banner = () => {
             </Col>
           </Row>
         </Container>
+        <contactUs/>
       </section>
     );
 }
+
+
+//  Our goal is providing with the necessary resources,
+// mentorship to successfully navigate the application and
+// enrollment process at international universities.This group
+// comprises founding members from both Kyrgyzstan and the USA,
+// which enables them to leverage existing relationships and
+// resources that helps the application process easy
