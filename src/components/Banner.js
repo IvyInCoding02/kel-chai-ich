@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from '../assets/images/background2.jpg';
 import { useEffect, useState } from "react";
@@ -50,22 +51,27 @@ export const Banner = () => {
                 {"Hi, your journey starts here. "}
                 <span className="wrap">{text}</span>
               </h1>
-              <p>
+              <p id="headparagrapgh">
                 Kel Chai Ich is nonprofit foundation that focuses on assisting
                 students from Kyrgyzstan, particularly those from rural areas
                 and young women, in their pursuit of higher education in United
-                States. 
+                States.
               </p>
-              <button onClick={() => console.log("connect")}>
+              {/* <button onClick={() => console.log("connect")}>
                 Let's connect <ArrowRightCircle size={25} />
-              </button>
+              </button> */}
+              <Nav.Link href="/partnership">
+                <button className="vvd">
+                  <span>Let's Connect</span>
+                </button>
+              </Nav.Link>
             </Col>
             <Col xs={12} md={6} xl={5}>
               {/* <img src={headerImg} alt="HeaderImg"/> */}
             </Col>
           </Row>
         </Container>
-        <contactUs/>
+        <contactUs />
       </section>
     );
 }

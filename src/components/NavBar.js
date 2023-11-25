@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
+import { Link } from "react-bootstrap-icons";
 import logo from "../assets/images/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
@@ -35,7 +36,7 @@ return (
   <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
     <Container>
       <Navbar.Brand href="#home">
-        <img src={logo} alt="Logo"/>
+        <img src={logo} alt="Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav">
         <span className="navbar-toggler-icon"></span>
@@ -43,25 +44,51 @@ return (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link
-            href="/" className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("home")}> Home
+            href="/"
+            className={
+              activeLink === "home" ? "active navbar-link" : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("home")}
+          >
+            {" "}
+            Home
           </Nav.Link>
-          <Nav.Link 
-            href="/scholarships" className={activeLink === "scholarships" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("scholarships")}> Scholarships
+          <Nav.Link
+            href="/scholarships"
+            className={
+              activeLink === "scholarships"
+                ? "active navbar-link"
+                : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("scholarships")}
+          >
+            {" "}
+            Scholarships
           </Nav.Link>
           {/* <Nav.Link 
             href="/resources" className={activeLink === "resources" ? "active navbar-link" : "navbar-link"}
             onClick={() => onUpdateActiveLink("resources")}> Resources
           </Nav.Link> */}
-          <Nav.Link 
-            href="/aboutUs" className={activeLink === "aboutUs" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("aboutsUs")}> AboutUs
+          <Nav.Link
+            href="/aboutUs"
+            className={
+              activeLink === "aboutUs" ? "active navbar-link" : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("aboutsUs")}
+          >
+            {" "}
+            AboutUs
           </Nav.Link>
           {/*   */}
           <Nav.Link
-            href="/contacts" className={activeLink === "contacts" ? "active navbar-link" : "navbar-link"}
-            onClick={() => onUpdateActiveLink("contacts")}> Contact Us
+            href="/contacts"
+            className={
+              activeLink === "contacts" ? "active navbar-link" : "navbar-link"
+            }
+            onClick={() => onUpdateActiveLink("contacts")}
+          >
+            {" "}
+            Contact Us
           </Nav.Link>
         </Nav>
         {/* <span className="navbar-text">
@@ -85,7 +112,6 @@ return (
       </Navbar.Collapse>
     </Container>
   </Navbar>
-  
 );
 
 }
