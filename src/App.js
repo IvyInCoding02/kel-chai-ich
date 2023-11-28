@@ -54,7 +54,7 @@ function App() {
     <div className="App">
       <NavBar/>
        <MyRoutes/>
-       <ScholarshipsPage/>
+       {/* <ScholarshipsPage/> */}
        <ContactUs/>
       <Footer/>
       {/* <input type="text" placeholder="Country" onChange={(e)=> {setNewCountry(e.target.value)}}/>

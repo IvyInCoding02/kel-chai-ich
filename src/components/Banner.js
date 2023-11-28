@@ -3,7 +3,8 @@ import { Nav } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from '../assets/images/background2.jpg';
 import { useEffect, useState } from "react";
-import contactUs from "./pages/contactUs/ContactUs";
+import contactUs, { ContactUs } from "./pages/contactUs/ContactUs";
+import { Footer } from "./Footer/Footer";
 
 
 export const Banner = () => {
@@ -71,7 +72,6 @@ export const Banner = () => {
             </Col>
           </Row>
         </Container>
-        <contactUs />
       </section>
     );
 }

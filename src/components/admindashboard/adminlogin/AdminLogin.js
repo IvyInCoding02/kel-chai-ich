@@ -5,9 +5,14 @@ import { auth } from '../../../api/firebase';
 import { signInWithEmailAndPassword, onAuthStateChanged,signOut} from 'firebase/auth';
 import styles from './adminlogin.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useFormik } from 'formik';
 
 
 
+// const validationSchema = yup.object().shape({
+//   email: yup.string().required('This field is required').email('Enter valid email address'),
+//   password: yup.string().required('This field is required')
+// })
 
 function AdminLogin() {
   const navigate = useNavigate();
@@ -34,12 +39,14 @@ function AdminLogin() {
   const login = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-    .then((res) => {
-      localStorage.setItem("id", res.user.uid)
-      navigate('/admindashboard');
-    })
-    .catch((err) => console.log(err));
-    };
+      .then((res) => {
+        localStorage.setItem("id", res.user.uid);
+        navigate("/admindashboard");
+      })
+      .catch((err) =>
+        console.log("Your email address and password do not match.Try again!")
+      );
+  };
 
     return (
       <div>
@@ -52,17 +59,27 @@ function AdminLogin() {
             <Col>
               <label>Email Address</label>
               <input
-                type="gmail"
-                onChange={(e) => setLoginEmail(e.target.value)}
+                type="email"
+                name="email"
+                required 
+                placeholder="Enter your email"
+                onChange={(e) => setLoginEmail(e.target.value)}   
               />
               <label>Password</label>
               <input
                 type="password"
-                onChange={(e) => setLoginPassword(e.target.value)}
+                id="password"
+                name="password"
+                required
+                value={loginPassword}
+                placeholder="Enter your password"
+                onChange={(e) => setLoginPassword(e.target.value)}  
               />
             </Col>
             <Col>
-              <button className={styles.adminButton} onClick={login}>Login</button>
+              <button className={styles.adminButton} onClick={login}>
+                Login
+              </button>
             </Col>
           </div>
         </form>
