@@ -137,8 +137,8 @@
     position: relative;
     margin: 10px auto 0px auto;
     padding: 20px 20px;
-    box-shadow: 4px 4px 4px 4px rgba(4, 140, 38, 0.25);
-    /* background: linear-gradient(90.21deg, #60c453 -5.91%, #c55dc7 111.58%); */
+    box-shadow: 4px 4px 4px 4px rgba(39, 5, 103, 0.25);
+    background: linear-gradient(90.21deg, #68e159 -5.91%, #c55dc7 111.58%);
 
   }
 
@@ -148,7 +148,7 @@
   }
   
   .img{
-    max-width: 350px;
+    max-width: 300px;
     max-height: 200px;
   }
   .title {
@@ -163,7 +163,7 @@
   .deadline,
   .requirements
    {
-    color:rgb(22, 22, 170);
+    color:rgb(5, 5, 15);
     margin: 0px 0;
   }
   

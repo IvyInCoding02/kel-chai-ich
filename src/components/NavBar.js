@@ -91,7 +91,7 @@ return (
             Contact Us
           </Nav.Link>
         </Nav>
-        {/* <span className="navbar-text">
+        <span className="navbar-text">
           <div className="social-icon">
             <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
               <img src={navIcon1} alt="" />
@@ -108,7 +108,7 @@ return (
             <span>Let's Connect</span>
           </button>
           </Nav.Link>
-        </span> */}
+        </span>
       </Navbar.Collapse>
     </Container>
   </Navbar>
