@@ -11,37 +11,40 @@ export const Footer = () => {
       <footer className={styles.footer}>
         <Container className={styles.container}>
           <Row className="align-items-center">
-            <Col size={12} sm={6}>
+            <Col size={12} sm={4}>
               <img src={logo} alt="Logo" />
-              <Col size={12} sm={6}>
-                <a href="/">Home</a>
-                <a href="/scholarships"> Scholarships</a>
-              </Col>
-              {/* <Col size={12} sm={6}>
-                <a>OurAlumni</a>
-              </Col> */}
-              <Col size={12} sm={6}>
-                <a href="/aboutus">About Us </a>
-                <a href="/contactus"> Contact Us </a>
-                <a href=""> Partnership </a>
-              </Col>
               <Col><a href="#"> Bishkek, Kyrgyzstan. 2023 </a></Col>
-              <Col>
-                <Nav.Link href="/login">Login</Nav.Link>
-              </Col>
+                <Col><Nav.Link href="/login">Login</Nav.Link></Col>
             </Col>
-            <Col size={12} sm={6} className={styles.icons}>
+           
+              <Col size={12} sm={4}>
+               <Col><a href="/">Home</a></Col> 
+                <Col><a href="/scholarships">Scholarships</a></Col>
+                <Col><a href="/aboutus">About Us</a></Col>
+                <Col><a href="/contactus"> Contact Us </a></Col>
+                <Col><a href=""> Partnership </a></Col>
+              </Col>
+            <Col size={12} sm={4} className={styles.icons}>
               <div className="social-icon"> 
                 <h1>Our social Media</h1>
+                <div className = {styles.iconBox}>
                 <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
                   <img src={navIcon1} alt="" />
                 </a>
+                <p>LinkedIn</p>
+                </div>
+                <div className = {styles.iconBox}>
                 <a href="https://www.facebook.com/profile.php?id=61550845261660&mibextid=LQQJ4d">
                   <img src={navIcon2} alt="" />
                 </a>
+                  <p>Facebook</p>
+                </div>
+                <div className = {styles.iconBox}>
                 <a href="https://instagram.com/kel_chai_ich?igshid=MzMyNGUyNmU2YQ==">
                   <img src={navIcon3} alt="" />
                 </a>
+                <p>Instagram</p>
+                </div>      
               </div>
             </Col>
             <Col className="text-center txt-sm-center">

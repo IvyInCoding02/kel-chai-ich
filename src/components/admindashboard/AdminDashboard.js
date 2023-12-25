@@ -9,6 +9,7 @@ import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { v4 } from 'uuid';
 import { addDoc,collection, } from 'firebase/firestore';
 import { db } from '../../api/firebase';
+import AdminScholarships from './adminlogin/AdminScholarships';
   
 
 function AdminDashboard() {
@@ -97,7 +98,7 @@ function AdminDashboard() {
         <button className={styles.btn} onClick={createScholarship} >Create scholarship</button>
       </form>
       
-      <form className={styles.resourcesForm}>
+      {/* <form className={styles.resourcesForm}>
         <h2>Make an addition to resources!</h2>
         <input  required type="text"  placeholder="Title" onChange ={(e) => {setTitle(e.target.value)}}/>
         <input type="text" placeholder="Info about the resource" onChange ={(e) => {setInfo(e.target.value)}} required />
@@ -107,13 +108,14 @@ function AdminDashboard() {
         <input type="file" onChange={(e) => {setImageUpload(e.target.files[0])}}/>
         <button className={styles.btn} onClick={uploadImage}>Upload image</button>
         <button className={styles.btn} onClick={createResource} >Add new resource</button>
-      </form>
+      </form> */}
     </div>
     <div>
         <button className={styles.logoutBtn} onClick={logout}>
           Logout
         </button>
       </div>
+      <AdminScholarships/>
     </section>
   );
 }

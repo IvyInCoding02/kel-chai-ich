@@ -14,10 +14,11 @@
   .footer h1{
     font-size: 20px;
     letter-spacing: 1px;
+    color: green;
   }
   
   .footer img {
-    width: 20%;
+    width: 50%;
   }
   .footer p {
     font-weight: 400;
@@ -28,14 +29,28 @@
   
   }
 
+ .iconBox{
+    display: flex;
+    margin-bottom: 6px;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .footer a{
     text-decoration: none;
     color: white;
    
   }
 
+  .footer p{
+    font-size:15px;
+    margin-top: 10px;
+  }
+
   .icons{
-    margin: 20px -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .line {
@@ -49,6 +64,8 @@
   padding: 16px 0 0 0;
   letter-spacing: 0.8px;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .container {

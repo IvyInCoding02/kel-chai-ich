@@ -22,8 +22,6 @@ function ScholarshipsPage() {
       setScholarships(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
      
     };
-  
-  
 
   const q = query(collection(db, 'scholarships'), where('category', '==', categoryFilter));
 useEffect(() => {

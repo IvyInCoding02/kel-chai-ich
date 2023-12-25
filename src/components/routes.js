@@ -43,7 +43,7 @@ function MyRoutes() {
         <Route path={"/resources"} element={<Resources/>} />
         <Route path={"/aboutus"} element={<AboutUs/>} />
         <Route path={"/ouralumni"} element={<OurAlumni/>} />
-        {/* <Route path={"/contacts"} element={<ContactUs/>} /> */}
+        <Route path={"/contacts"} element={<ContactUs/>} />
         <Route path={"/login"} element={<AdminLogin />} />
         <Route path={"/scholarshipform"} element={<CreateScholarships />} />
         <Route path={"/partnership"} element={<PartnershipPage />} />

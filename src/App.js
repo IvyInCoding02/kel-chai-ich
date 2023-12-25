@@ -55,7 +55,7 @@ function App() {
       <NavBar/>
        <MyRoutes/>
        {/* <ScholarshipsPage/> */}
-       <ContactUs/>
+       {/* <ContactUs/> */}
       <Footer/>
       {/* <input type="text" placeholder="Country" onChange={(e)=> {setNewCountry(e.target.value)}}/>
       <input type="text" placeholder="Category" onChange={(e)=> {setNewCategory(e.target.value)}}/>
