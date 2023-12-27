@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../api/firebase';
-import { collection, getDocs, query, where, updateDoc } from 'firebase/firestore';
+import { collection, getDocs, query, updateDoc, deleteDoc, doc } from 'firebase/firestore';
 import styles from "../adminscholarships.module.css";
 
 
 function AdminScholarships() {
     const [scholarships, setScholarships] = useState([]);
     const scholarshipsCollectionRef = collection(db, "scholarships");
+    const [listView, setListView] = useState(true);
    
   
   
@@ -16,29 +17,38 @@ function AdminScholarships() {
        
       };
   
-    const q = query(collection(db, 'scholarships'), where('category', '==', categoryFilter));
+    const q = query(collection(db, 'scholarships'));
   useEffect(() => {
     getDocs(q)
-    .then((querySnapshot) => {
-      if(categoryFilter == "All"){
-        getScholarships();
-      }else{
-        console.log(querySnapshot)
-        const scholarshipsArray = []
-        querySnapshot.forEach((doc) => {
-          // doc.data() содержит данные документа
-          const data = doc.data();
-          console.log(data);
-          scholarshipsArray.push(data)
-        });
-        setScholarships(scholarshipsArray);
-      } 
+    .then((query) => {
+        getScholarships();    
     })
     .catch((error) => {
       console.error('Server Error:', error);
     });
-  },[categoryFilter])
-  
+  },[])
+
+  const updateScholarship = async(id) => {
+    const scholarshipDoc = doc(db, 'scholarships', id)
+    const newFields = {
+      title: '',
+      fund: '',
+      category: '',
+      info: '',
+      deadline:'',
+      country: '',
+      requirements: '',
+      link:'',
+      more:''
+    }
+    await updateDoc(scholarshipDoc, newFields)
+  }
+
+
+  const deleteScholarship = async (id) => {
+    const scholarshipDoc = doc(db, "scholarships", id)
+    await deleteDoc(scholarshipDoc);
+  }
   
     return (
       <div>
@@ -70,8 +80,8 @@ function AdminScholarships() {
                   <a className={styles.more} href={scholarship.link}>
                     Learn more
                   </a>
-                  <button>Edit</button>
-                  <button>Delete</button>
+                  <button  className={styles.changeButtons} onClick={()=> {updateScholarship(scholarship.id)}}>Edit</button>
+                  <button className={styles.changeButtons} onClick={() => {deleteScholarship(scholarship.id)}}>Delete</button>
                 </div>
               </div>
             );
