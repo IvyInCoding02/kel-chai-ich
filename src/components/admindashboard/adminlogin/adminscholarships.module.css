@@ -18,8 +18,9 @@
   
   
   .changeButtons{
-    width: 100px;
-    border-radius: px;
+    width: 200px;
+    height:40px;
+    border-radius: 10px;
     margin: 20px 10px;
     background-color: white;
   }

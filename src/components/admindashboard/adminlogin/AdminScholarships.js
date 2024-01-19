@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../api/firebase';
 import { collection, getDocs, query, updateDoc, deleteDoc, doc } from 'firebase/firestore';
-import styles from "../adminscholarships.module.css";
+import styles from "./adminscholarships.module.css";
 
 
 function AdminScholarships() {
@@ -29,21 +29,21 @@ function AdminScholarships() {
         });
     }, [scholarships]);
 
-  const updateScholarship = async (id) => {
-    const scholarshipDoc = doc(db, "scholarships", id);
-    const newFields = {
-      title: "",
-      fund: "",
-      category: "",
-      info: "",
-      deadline: "",
-      country: "",
-      requirements: "",
-      link: "",
-      more: "",
-    };
-    await updateDoc(scholarshipDoc, newFields);
-  };
+  // const updateScholarship = async (id) => {
+  //   const scholarshipDoc = doc(db, "scholarships", id);
+  //   const newFields = {
+  //     title: "",
+  //     fund: "",
+  //     category: "",
+  //     info: "",
+  //     deadline: "",
+  //     country: "",
+  //     requirements: "",
+  //     link: "",
+  //     more: "",
+  //   };
+  //   await updateDoc(scholarshipDoc, newFields);
+  // };
 
 
   // const deleteScholarship = async (id) => {
@@ -90,7 +90,7 @@ function AdminScholarships() {
                   <a className={styles.more} href={scholarship.link}>
                     Learn more
                   </a>
-                  <button  className={styles.changeButtons} onClick={()=> {updateScholarship(scholarship.id)}}>Edit</button>
+                  {/* <button  className={styles.changeButtons} onClick={()=> {updateScholarship(scholarship.id)}}>Edit</button> */}
                   <button className={styles.changeButtons} onClick={() => {deleteScholarship(scholarship.id)}}>Delete</button>
                 </div>
               </div>
