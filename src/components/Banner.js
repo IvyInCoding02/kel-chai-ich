@@ -63,7 +63,7 @@ export const Banner = () => {
               </button> */}
               <Nav.Link href="/partnership">
                 <button className="vvd">
-                  <span>Let's Connect</span>
+                  {/* <span>Let's Connect</span> */}
                 </button>
               </Nav.Link>
             </Col>

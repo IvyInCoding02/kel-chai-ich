@@ -76,10 +76,8 @@ return (
             }
             onClick={() => onUpdateActiveLink("aboutsUs")}
           >
-            {" "}
             AboutUs
           </Nav.Link>
-          {/*   */}
           <Nav.Link
             href="/contacts"
             className={
@@ -87,12 +85,11 @@ return (
             }
             onClick={() => onUpdateActiveLink("contacts")}
           >
-            {" "}
             Contact Us
           </Nav.Link>
         </Nav>
-        {/* <span className="navbar-text">
-          <div className="social-icon">
+        <span className="navbar-text">
+          {/* <div className="social-icon">
             <a href="https://www.linkedin.com/in/kel-chai-ich-foundation/">
               <img src={navIcon1} alt="" />
             </a>
@@ -102,13 +99,13 @@ return (
             <a href="https://instagram.com/kel_chai_ich?igshid=MzMyNGUyNmU2YQ==">
               <img src={navIcon3} alt="" />
             </a>
-          </div>
+          </div> */}
           <Nav.Link href="/partnership"> 
           <button className="vvd">
             <span>Let's Connect</span>
           </button>
           </Nav.Link>
-        </span> */}
+        </span>
       </Navbar.Collapse>
     </Container>
   </Navbar>

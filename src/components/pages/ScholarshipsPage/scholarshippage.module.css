@@ -56,12 +56,15 @@
 }
 
 .card .wrapper {
-  max-width: calc(33.33% - 20px); 
+  max-width: calc(33.33% - 25px); 
   display: grid;
-  /* flex-direction: column; */
-  margin: 0px 0 32px 10px;
-  /* padding: 60px auto; */
+  margin: 0px 0 22px 0;
+  text-align:start;
   box-sizing: border-box;
+}
+
+.card .wrapper:hover{
+  transform: scale(1.1);
 }
 
 .card.info {
@@ -70,14 +73,13 @@
 }
 
 .card .img {
-  max-width: 350px;
+  max-width: 600px;
   max-height: 200px;
 }
 
 .card .title {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0 -16px;
 }
 
 .card .fund,
@@ -85,7 +87,6 @@
 .card .deadline,
 .card .country,
 .card .requirements {
-  margin: 5px -16px;
   font-size: 1rem;
 }
 
@@ -93,7 +94,6 @@
   color: green;
   text-decoration: none;
   display: block;
-  margin: 10px -16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,14 +132,18 @@
 
 }
 .wrapper { 
-    width: 95%;
+    width: 90%;
     display: flex;
     position: relative;
     margin: 10px auto 0px auto;
     padding: 20px 20px;
     box-shadow: 4px 4px 4px 4px rgba(39, 5, 103, 0.25);
-    background: linear-gradient(90.21deg, #68e159 -5.91%, #c55dc7 111.58%);
+    background: linear-gradient(90.21deg, white -3.91%, #7ddb71);
 
+  }
+
+  .container .wrapper:hover{
+    transform: scale(1.1);
   }
 
   .info{

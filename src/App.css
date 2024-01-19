@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #f2f5ed !important;
+  background-color: white !important;
   color: rgb(6, 3, 1)!important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -98,12 +98,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link
  { 
   display: flex;
   justify-content: flex-end;
-  font-weight: 700;
-  color: rgb(10, 145, 44)!important;
+  font-weight: 1200;
+  color: rgba(31, 232, 12, 0.894) !important;
   letter-spacing: 0.5px;
   padding: 0 20px;
   font-size: 16px;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 
@@ -168,7 +168,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #12cf51;
+  color: rgba(31, 232, 12, 0.894);
   border: 1px solid #ffffffbe;
   padding: 18px 34px;
   font-size: 18px;
@@ -251,14 +251,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   padding: 160px 0 100px 0;
-  background-image: url('./assets/img/havecopyrights3.jpg');
-  /* background-repeat: no-repeat; */
+  background-image: url('./assets/img/copyrights6.jpg');
   background-position: top center;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
-  
-
 }
 
 .banner .tagline {
@@ -282,14 +278,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p {
-  color: white;
+  bottom:25px;
+  color: rgba(31, 232, 12, 0.894);
   font-weight: 800;
   /* background-color: white; */
   opacity: 1;
   font-size: 22px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 98%;
+  width: 90%;
 }
 
 .banner button {

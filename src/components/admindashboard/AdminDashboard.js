@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import { signOut } from 'firebase/auth';
@@ -10,6 +10,7 @@ import { v4 } from 'uuid';
 import { addDoc,collection, } from 'firebase/firestore';
 import { db } from '../../api/firebase';
 import AdminScholarships from './adminlogin/AdminScholarships';
+
   
 
 function AdminDashboard() {
@@ -23,6 +24,7 @@ function AdminDashboard() {
   const [newDeadline, setNewDeadline] = useState("");
   const [newCountry, setNewCountry] = useState("");
   const [newImage, setNewImage] = useState("");
+  const formRef = useRef(null);
 
   const resourcesCollectionRef = collection(db, "resources")
   const [title, setTitle] = useState("");
@@ -43,9 +45,9 @@ function AdminDashboard() {
       country: newCountry,
       image : newImage
     }).catch(err => console.log(err))
+    formRef.current.reset();
     alert("Scholarship is successfully created!") 
   };
- 
 
     const uploadImage = (e) => {
     e.preventDefault();
@@ -83,7 +85,7 @@ function AdminDashboard() {
     <section>
       <h1 className={styles.headerText}>Welcome to Admin Dashbooard!</h1>
       <div className={styles.adminContainer}>
-      <form className={styles.scholarshipForm}>
+      <form className={styles.scholarshipForm}  ref={formRef} onSubmit={createScholarship}>
         <h2 >Create a scholarship here!</h2>
         <input type="text" placeholder="Title" onChange={(e) => {setNewTitle(e.target.value)}} required/>
         <input type="text" placeholder="Scholarhsip info" onChange={(e) => {setNewInfo(e.target.value)}} required/>
@@ -95,7 +97,7 @@ function AdminDashboard() {
         <input type="text" placeholder="Upload image link" onChange={(e) => {setNewImage(e.target.value)}} required/>
         {/* <input type="file" onChange={(e) => {setImageUpload(e.target.files[0])}}/>
         <button onClick={uploadImage}>Upload image</button> */}
-        <button className={styles.btn} onClick={createScholarship} >Create scholarship</button>
+        <button className={styles.btn} type="submit">Create scholarship</button>
       </form>
       
       {/* <form className={styles.resourcesForm}>

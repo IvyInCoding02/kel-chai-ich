@@ -13,43 +13,53 @@ function AdminScholarships() {
   
       const getScholarships = async () => {
         const data = await getDocs(scholarshipsCollectionRef);
-        setScholarships(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-       
+        setScholarships(
+          data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+        );
       };
   
-    const q = query(collection(db, 'scholarships'));
-  useEffect(() => {
-    getDocs(q)
-    .then((query) => {
-        getScholarships();    
-    })
-    .catch((error) => {
-      console.error('Server Error:', error);
-    });
-  },[])
+    const q = query(collection(db, "scholarships"));
+    useEffect(() => {
+      getDocs(q)
+        .then((query) => {
+          getScholarships();
+        })
+        .catch((error) => {
+          console.error("Server Error:", error);
+        });
+    }, [scholarships]);
 
-  const updateScholarship = async(id) => {
-    const scholarshipDoc = doc(db, 'scholarships', id)
+  const updateScholarship = async (id) => {
+    const scholarshipDoc = doc(db, "scholarships", id);
     const newFields = {
-      title: '',
-      fund: '',
-      category: '',
-      info: '',
-      deadline:'',
-      country: '',
-      requirements: '',
-      link:'',
-      more:''
-    }
-    await updateDoc(scholarshipDoc, newFields)
-  }
+      title: "",
+      fund: "",
+      category: "",
+      info: "",
+      deadline: "",
+      country: "",
+      requirements: "",
+      link: "",
+      more: "",
+    };
+    await updateDoc(scholarshipDoc, newFields);
+  };
 
 
-  const deleteScholarship = async (id) => {
-    const scholarshipDoc = doc(db, "scholarships", id)
-    await deleteDoc(scholarshipDoc);
-  }
+  // const deleteScholarship = async (id) => {
+  //   const scholarshipDoc = doc(db, "scholarships", id);
+  //   await deleteDoc(scholarshipDoc);
+  // };
   
+  const deleteScholarship = async (id) => {
+    try{
+      await deleteDoc(doc(db, "scholarships", id))
+      setScholarships(scholarships.filter((item) => !item.id))
+    }catch{
+
+    }
+  };
+
     return (
       <div>
         <div className={styles.headline}>

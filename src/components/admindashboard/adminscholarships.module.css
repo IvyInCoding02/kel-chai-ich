@@ -61,16 +61,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
-  .card .wrapper {
-    max-width: calc(33.33% - 20px); 
-    display: grid;
-    /* flex-direction: column; */
-    margin: 0px 0 32px 10px;
-    /* padding: 60px auto; */
-    box-sizing: border-box;
-  }
-  
+
+
+
   .card.info {
     margin-left: auto;
     
@@ -179,3 +172,6 @@
       text-decoration: none;
       display: block;
     }
+
+
+    
