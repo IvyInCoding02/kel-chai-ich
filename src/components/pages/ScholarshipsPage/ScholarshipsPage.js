@@ -88,7 +88,7 @@ useEffect(() => {
                 />
               <div className={styles.info}>
                 <h1 className={styles.title}>{scholarship.title}</h1>
-                <p className={styles.fund}>Scholarship: {scholarship.fund}</p>
+                <p className={styles.fund}>Scholarship: {scholarship.info}</p>
                 <p className={styles.category}>
                   Category: {scholarship.category}
                 </p>

@@ -37,7 +37,7 @@ function AdminDashboard() {
     e.preventDefault();
     await addDoc(scholarshipsCollectionRef, {
       title: newTitle,
-      info: newInfo,
+      fund: newInfo,
       link: newLink,
       requirements: newRequirements,
       category: newCategory,
@@ -88,7 +88,7 @@ function AdminDashboard() {
       <form className={styles.scholarshipForm}  ref={formRef} onSubmit={createScholarship}>
         <h2 >Create a scholarship here!</h2>
         <input type="text" placeholder="Title" onChange={(e) => {setNewTitle(e.target.value)}} required/>
-        <input type="text" placeholder="Scholarhsip info" onChange={(e) => {setNewInfo(e.target.value)}} required/>
+        <input type="text" placeholder="Scholarhsip funding" onChange={(e) => {setNewInfo(e.target.value)}} required/>
         <input type="text" placeholder="Requirements" onChange={(e) => {setNewRequirements(e.target.value)}} required/>
         <input type="date" placeholder="Deadline" onChange={(e) => {setNewDeadline(e.target.value)}} required/>
         <input type="text" placeholder="Category" onChange={(e) => {setNewCategory(e.target.value)}} required/>
