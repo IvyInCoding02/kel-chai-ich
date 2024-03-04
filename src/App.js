@@ -9,6 +9,7 @@ import MyRoutes from './components/routes';
 import PartnershipPage from './components/pages/PartnershipPage/PartnershipPage';
 import { ContactUs } from './components/pages/contactUs/ContactUs';
 import ScholarshipsPage from './components/pages/ScholarshipsPage/ScholarshipsPage';
+import HomePage from './components/pages/HomePage/HomePage';
 // import { useEffect, useState } from 'react';
 // import { db } from './api/firebase';
 // import { collection, getDocs, addDoc, updateDoc,doc, deleteDoc } from 'firebase/firestore'; 
@@ -54,8 +55,7 @@ function App() {
     <div className="App">
       <NavBar/>
        <MyRoutes/>
-       {/* <ScholarshipsPage/> */}
-       {/* <ContactUs/> */}
+       <HomePage/>
       <Footer/>
       {/* <input type="text" placeholder="Country" onChange={(e)=> {setNewCountry(e.target.value)}}/>
       <input type="text" placeholder="Category" onChange={(e)=> {setNewCategory(e.target.value)}}/>

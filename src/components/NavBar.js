@@ -107,7 +107,9 @@ return (
           </Nav.Link>
         </span>
       </Navbar.Collapse>
+      <hr></hr>
     </Container>
+    
   </Navbar>
 );
 

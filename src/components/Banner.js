@@ -45,19 +45,19 @@ export const Banner = () => {
     return (
       <section className="banner" id="home">
         <Container>
-          <Row className="align-items-center">
+          <Row className="align-items">
             <Col xs={12} md={6} xl={7}>
-              {/* <span className="tagline">Welcome to Kel Chai Ich</span> */}
+              <span className="tagline">Welcome to Kel Chai Ich</span>
               <h1>
                 {"Hi, your journey starts here. "}
                 <span className="wrap">{text}</span>
               </h1>
-              <p id="headparagrapgh">
+              {/* <p id="headparagrapgh">
                 Kel Chai Ich is nonprofit foundation that focuses on assisting
                 students from Kyrgyzstan, particularly those from rural areas
                 and young women, in their pursuit of higher education in United
                 States.
-              </p>
+              </p> */}
               {/* <button onClick={() => console.log("connect")}>
                 Let's connect <ArrowRightCircle size={25} />
               </button> */}

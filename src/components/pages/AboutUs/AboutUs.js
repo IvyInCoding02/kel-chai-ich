@@ -44,20 +44,9 @@ export const AboutUs = () => {
                 and young women, in their pursuit of higher education abroad.
                 The project aims to provide these students with the necessary
                 resources, mentorship, and guidance to navigate the application
-                and enrollment process for universities outside of Kyrgyzstan.{" "}
+                and enrollment process for universities outside of Kyrgyzstan.
               </p>
               <img style={{maxWidth: "600px", mzxHeight:"300"}}src="https://www.unicef.org/kyrgyzstan/sites/unicef.org.kyrgyzstan/files/styles/press_release_feature/public/DSC02839.jpg?itok=aHg0lcKu"/>
-              <p>
-                Kel Chai Ich is a multinational group comprising individuals
-                with lived experience in seeking visas for education
-                opportunities, supporting visa applications, and providing
-                education in low-resource communities. With founding members
-                from both Kyrgyzstan and the USA, the project can leverage
-                existing relationships and resources developed through previous
-                projects. This project is a natural evolution of existing
-                efforts, aiming to scale the support provided to individual
-                members of the group
-              </p>
             </div>
 
             <div className={styles.aboutBox}>
