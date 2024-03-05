@@ -5,6 +5,7 @@ import headerImg from '../assets/images/background2.jpg';
 import { useEffect, useState } from "react";
 import contactUs, { ContactUs } from "./pages/contactUs/ContactUs";
 import { Footer } from "./Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage";
 
 
 export const Banner = () => {
@@ -43,7 +44,8 @@ export const Banner = () => {
         }
     }
     return (
-      <section className="banner" id="home">
+      <section>
+        <div className="banner" id="home">
         <Container>
           <Row className="align-items">
             <Col xs={12} md={6} xl={7}>
@@ -72,7 +74,10 @@ export const Banner = () => {
             </Col>
           </Row>
         </Container>
+        </div>
+        <HomePage/>
       </section>
+      
     );
 }
 

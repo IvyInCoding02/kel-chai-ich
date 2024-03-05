@@ -65,10 +65,10 @@ return (
             {" "}
             Scholarships
           </Nav.Link>
-          {/* <Nav.Link 
+          <Nav.Link 
             href="/resources" className={activeLink === "resources" ? "active navbar-link" : "navbar-link"}
             onClick={() => onUpdateActiveLink("resources")}> Resources
-          </Nav.Link> */}
+          </Nav.Link> 
           <Nav.Link
             href="/aboutUs"
             className={

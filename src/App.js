@@ -55,7 +55,6 @@ function App() {
     <div className="App">
       <NavBar/>
        <MyRoutes/>
-       <HomePage/>
       <Footer/>
       {/* <input type="text" placeholder="Country" onChange={(e)=> {setNewCountry(e.target.value)}}/>
       <input type="text" placeholder="Category" onChange={(e)=> {setNewCategory(e.target.value)}}/>
@@ -63,7 +62,6 @@ function App() {
       {scholarships.map((scholarship) => {
         return (
           <div>
-            {""}
             <h1>{scholarship.title}</h1>
             <p>{scholarship.about}</p>
             <p>{scholarship.requirements}</p>
