@@ -62,7 +62,6 @@ return (
             }
             onClick={() => onUpdateActiveLink("scholarships")}
           >
-            {" "}
             Scholarships
           </Nav.Link>
           <Nav.Link 
@@ -78,6 +77,7 @@ return (
           >
             AboutUs
           </Nav.Link>
+          
           <Nav.Link
             href="/contacts"
             className={
