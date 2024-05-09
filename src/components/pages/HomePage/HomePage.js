@@ -24,7 +24,7 @@ export default function HomePage() {
                 <img src={MissionImage} alt=""/>
                 </Col>
             </Row>
-            <Row className="align-items-center">
+            {/* <Row className="align-items-center">
                 <h1 style={{marginLeft:"500px", padding:"40px"}}>OUR VISION</h1>
                 <Col>
                 <img src={vision1} alt=""/>
@@ -67,7 +67,7 @@ export default function HomePage() {
                 and enrollment process for universities outside of Kyrgyzstan.
                 </p>
                 </Col>                
-            </Row>
+            </Row> */}
             </div>
         {/* </Container> */}
     </section>

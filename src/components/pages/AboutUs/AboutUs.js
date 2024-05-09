@@ -8,6 +8,10 @@ import Aibiike from "../../../assets/images/Aibiike1.jpg";
 import Joe from "../../../assets/images/Joe1.jpg";
 import Aidana from '../../../assets/images/Aidana.jpg';
 import colorSharp from "../../../assets/img/color-sharp.png";
+import vision1 from '../../../assets/images/1.png';
+import vision2 from '../../../assets/images/2.png';
+import vision3 from '../../../assets/images/3.png';
+import MissionImage from "../../../assets/images/mission2.png";
 import styles from "./aboutus.module.css";
 
 export const AboutUs = () => {
@@ -34,28 +38,46 @@ export const AboutUs = () => {
   return (
     <section className={styles.about} id="abouts">
       <Container>
+      <Row>
+            <h1 style={{marginLeft:"400px", padding:"20px"}}>OUR MISSION</h1>
+                <Col xs={4} md={4} align-items="center">
+                <img src={MissionImage} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"320px", textAlign:"center"}}>
+                Support students from Kyrgyzstan, particularly those from rural areas
+                and young women, in their pursuit of higher education abroad.  
+                </p>
+                </Col>
+                <Col>
+                <img  src={MissionImage} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"320px", textAlign:"center"}}>
+                Provide students with the necessary
+                resources, mentorship, and guidance to navigate the application
+                and enrollment process for universities outside of Kyrgyzstan.
+                </p>
+                </Col>
+                <Col>
+                <img src={MissionImage} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"320px", textAlign:"center", top:"200px"}}>
+                Provide students with the necessary
+                resources, mentorship, and guidance to navigate the application
+                and enrollment process for universities outside of Kyrgyzstan.
+                </p>
+                </Col>              
+            </Row>
+      </Container>
+      <Container>
         <Row>
           <Col>
             <div className={styles.aboutBox}>
-              <h2>OUR MISSION</h2>
-              <p>
-                Kel Chai Ich is a comprehensive project designed to support
-                students from Kyrgyzstan, particularly those from rural areas
-                and young women, in their pursuit of higher education abroad.
-                The project aims to provide these students with the necessary
-                resources, mentorship, and guidance to navigate the application
-                and enrollment process for universities outside of Kyrgyzstan.
-              </p>
-              <img style={{maxWidth: "600px", mzxHeight:"300"}}src="https://www.unicef.org/kyrgyzstan/sites/unicef.org.kyrgyzstan/files/styles/press_release_feature/public/DSC02839.jpg?itok=aHg0lcKu"/>
-            </div>
-
-            <div className={styles.aboutBox}>
-              <h2>OUR PEOPLE</h2>
+              <h1>OUR PEOPLE</h1>
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                transitionDuration={500}
+                // removeArrowOnDeviceType={["desktop", "mobile"]}
                 className={styles.aboutSlider}
               >
+                <Container>
                 <article className={styles.aboutSlider}>
                   <div className={styles.item}>
                     <img src={Gulnazik} alt="Image" />
@@ -77,7 +99,9 @@ export const AboutUs = () => {
                     </div>
                   </div>
                 </article>
+                </Container>
 
+                <Container>
                 <article className={styles.aboutSlider}>
                   <div className={styles.item}>
                     <img src={Katie} alt="Image" />
@@ -97,8 +121,10 @@ export const AboutUs = () => {
                     </div>
                   </div>
                 </article>
+                </Container>
 
-                <article className={styles.sliderInfo}>
+               <Container>
+               <article className={styles.sliderInfo}>
                   <div className={styles.item}>
                     <img src={Joe} alt="Image" />
                     <div className={styles.aboutInfo}>
@@ -115,8 +141,10 @@ export const AboutUs = () => {
                     </div>
                   </div>
                 </article>
+               </Container>
 
-                <article className={styles.aboutSlider}>
+               <Container>
+               <article className={styles.aboutSlider}>
                   <div className={styles.item}>
                     <img src={Aibiike} alt="Image" />
                     <div className={styles.info}>
@@ -140,7 +168,9 @@ export const AboutUs = () => {
                     </div>
                   </div>
                 </article>
+               </Container>
 
+                <Container>
                 <article className={styles.sliderAbout}>
                   <div className={styles.item}>
                     <img src={Aidana} alt="Image" />
@@ -160,28 +190,39 @@ export const AboutUs = () => {
                     </div>
                   </div>
                 </article>
+                </Container>
               </Carousel>
             </div>
-
-            <div className={styles.aboutBox}>
-              <h2>OUR VISION</h2>
-              <p>
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+            <Row className="align-items-center">
+                <h1 style={{marginLeft:"400px", padding:"20px"}}>OUR VISION</h1>
+                <Col>
+                <img src={vision1} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"350px", textAlign:"center"}}>
                 Guide perspective girls from regions of Kyrgyzstan and fully
                 assist with the application process through mentorship and peer
                 support.
               </p>
-              <p>
+                </Col>
+                <Col>
+                <img src={vision2} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"350px", textAlign:"center"}}>
                 Get all participants accepted to universities abroad with the
                 opportunity to qualify for needed scholarships and funding.
               </p>
-              <p>
+                </Col>
+                <Col>
+                <img src={vision3} alt="" style={{marginLeft:"60px"}}/>
+                <p style={{width:"350px", textAlign:"center"}}>
                 Establish a nation of educated girls investing and supporting
                 the younger generation of the program to pursue education at
                 their dream universities and countries.
               </p>
-            </div>
-          </Col>
-        </Row>
+                </Col>
+            </Row>
       </Container>
       <img
         className="background-image-left"
